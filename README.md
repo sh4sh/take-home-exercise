@@ -1,2 +1,1 @@
-# person-api ~
-testing
+# person-api
