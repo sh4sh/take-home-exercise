@@ -1,22 +1,21 @@
-
 {
-    "application": "dinghytest", # Global variable
+    "application": "dinghytest",
     "pipelines": [
         {
-            "application": "dinghytest", # Application where pipeline will exist
-            "keepWaitingPipelines": false, # Pipeline settings
-            "limitConcurrent": true, # Pipeline settings
-            "name": "Dinghy Pipeline", # Name of pipeline
-            "stages": [ # Stages the pipeline will have
+            "application": "dinghytest",
+            "keepWaitingPipelines": false,
+            "limitConcurrent": true,
+            "name": "Dinghy Pipeline",
+            "stages": [ 
                 {
-                    "name": "Wait", # Name of the stage
-                    "refId": "1", # Order of stage
+                    "name": "Wait",
+                    "refId": "1",
                     "requisiteStageRefIds": [],
-                    "type": "wait", # Type of stage
-                    "waitTime": 21 # Stage specific configurations
+                    "type": "wait",
+                    "waitTime": 21
                 }
             ],
-            "triggers": [] # Triggers for the pipeline
+            "triggers": []
         }
     ]
 }
