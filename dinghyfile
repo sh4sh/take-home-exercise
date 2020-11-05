@@ -7,13 +7,7 @@
             "limitConcurrent": true,
             "name": "Dinghy Pipeline",
             "stages": [ 
-                {
-                    "name": "Wait",
-                    "refId": "1",
-                    "requisiteStageRefIds": [],
-                    "type": "wait",
-                    "waitTime": 21
-                }
+                {{ module "wait.module" waitTime 20 }}
             ],
             "triggers": []
         }
